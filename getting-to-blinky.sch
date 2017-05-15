@@ -1,0 +1,271 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CK_Slide_Switches
+LIBS:getting-to-blinky-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 5912A948
+P 5100 2700
+F 0 "R2" V 5180 2700 50  0000 C CNN
+F 1 "R" V 5100 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5030 2700 50  0001 C CNN
+F 3 "" H 5100 2700 50  0001 C CNN
+	1    5100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5912A98B
+P 5100 3100
+F 0 "R3" V 5180 3100 50  0000 C CNN
+F 1 "R" V 5100 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5030 3100 50  0001 C CNN
+F 3 "" H 5100 3100 50  0001 C CNN
+	1    5100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5912A9A8
+P 4900 3100
+F 0 "R1" V 4980 3100 50  0000 C CNN
+F 1 "R" V 4900 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4830 3100 50  0001 C CNN
+F 3 "" H 4900 3100 50  0001 C CNN
+	1    4900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5912A9CE
+P 5700 3100
+F 0 "C1" H 5725 3200 50  0000 L CNN
+F 1 "10U" H 5725 3000 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 5738 2950 50  0001 C CNN
+F 3 "" H 5700 3100 50  0001 C CNN
+	1    5700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5912AA29
+P 5100 2300
+F 0 "D1" H 5100 2400 50  0000 C CNN
+F 1 "LED" H 5100 2200 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5100 2300 50  0001 C CNN
+F 3 "" H 5100 2300 50  0001 C CNN
+	1    5100 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5912AA64
+P 5100 3500
+F 0 "D2" H 5100 3600 50  0000 C CNN
+F 1 "LED" H 5100 3400 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5100 3500 50  0001 C CNN
+F 3 "" H 5100 3500 50  0001 C CNN
+	1    5100 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 3250 5100 3350
+Wire Wire Line
+	5100 2850 5100 2950
+Wire Wire Line
+	5100 2450 5100 2550
+Wire Wire Line
+	4700 2900 5100 2900
+Connection ~ 5100 2900
+$Comp
+L VCC #PWR01
+U 1 1 5912B8B3
+P 5100 1550
+F 0 "#PWR01" H 5100 1400 50  0001 C CNN
+F 1 "VCC" H 5100 1700 50  0000 C CNN
+F 2 "" H 5100 1550 50  0001 C CNN
+F 3 "" H 5100 1550 50  0001 C CNN
+	1    5100 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1550 5100 2150
+Wire Wire Line
+	4700 3300 4900 3300
+Wire Wire Line
+	4900 3300 4900 3250
+Wire Wire Line
+	4900 2950 4900 2900
+Connection ~ 4900 2900
+Wire Wire Line
+	5700 2850 5700 2950
+Text GLabel 5700 2850 1    60   Output ~ 0
+Drain
+Text GLabel 4800 3600 3    60   Output ~ 0
+Drain
+Wire Wire Line
+	4800 3600 4800 3300
+Connection ~ 4800 3300
+Text GLabel 3550 2900 0    60   Output ~ 0
+Drain
+Wire Wire Line
+	3700 2900 3550 2900
+NoConn ~ 3700 3100
+$Comp
+L Battery_Cell BT1
+U 1 1 5912C133
+P 6250 2200
+F 0 "BT1" H 6350 2300 50  0000 L CNN
+F 1 "Battery_Cell" H 6350 2200 50  0000 L CNN
+F 2 "ALU_Connectors:BAT-HLD-001-CR2032" V 6250 2260 50  0001 C CNN
+F 3 "" V 6250 2260 50  0001 C CNN
+	1    6250 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4700 3100
+Wire Wire Line
+	4200 3500 4200 4150
+Wire Wire Line
+	5100 3950 4200 3950
+Connection ~ 4200 3950
+$Comp
+L GND #PWR02
+U 1 1 5912CFA2
+P 4200 4150
+F 0 "#PWR02" H 4200 3900 50  0001 C CNN
+F 1 "GND" H 4200 4000 50  0000 C CNN
+F 2 "" H 4200 4150 50  0001 C CNN
+F 3 "" H 4200 4150 50  0001 C CNN
+	1    4200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ICM7555 U1
+U 1 1 5912D569
+P 4200 3100
+F 0 "U1" H 3800 3450 50  0000 L CNN
+F 1 "ICM7555" H 3800 2750 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4200 3100 50  0001 C CNN
+F 3 "" H 4200 3100 50  0001 C CNN
+	1    4200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 5913E7BC
+P 4200 2550
+F 0 "#PWR03" H 4200 2400 50  0001 C CNN
+F 1 "VCC" H 4200 2700 50  0000 C CNN
+F 2 "" H 4200 2550 50  0001 C CNN
+F 3 "" H 4200 2550 50  0001 C CNN
+	1    4200 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2700 4200 2550
+$Comp
+L VCC #PWR04
+U 1 1 5913E875
+P 3100 3200
+F 0 "#PWR04" H 3100 3050 50  0001 C CNN
+F 1 "VCC" H 3100 3350 50  0000 C CNN
+F 2 "" H 3100 3200 50  0001 C CNN
+F 3 "" H 3100 3200 50  0001 C CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3300 3100 3300
+Wire Wire Line
+	3100 3300 3100 3200
+$Comp
+L GND #PWR05
+U 1 1 5913E8E3
+P 6250 2400
+F 0 "#PWR05" H 6250 2150 50  0001 C CNN
+F 1 "GND" H 6250 2250 50  0000 C CNN
+F 2 "" H 6250 2400 50  0001 C CNN
+F 3 "" H 6250 2400 50  0001 C CNN
+	1    6250 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2400 6250 2300
+Wire Wire Line
+	5100 3650 5100 3950
+$Comp
+L GND #PWR06
+U 1 1 5913E9CA
+P 5700 3350
+F 0 "#PWR06" H 5700 3100 50  0001 C CNN
+F 1 "GND" H 5700 3200 50  0000 C CNN
+F 2 "" H 5700 3350 50  0001 C CNN
+F 3 "" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3250 5700 3350
+Wire Wire Line
+	6250 2000 6250 1850
+$Comp
+L JS202011SCQN SW1
+U 1 1 591557FB
+P 5850 1850
+F 0 "SW1" H 5750 2050 60  0000 C CNN
+F 1 "JS202011SCQN" H 5850 1550 60  0001 C CNN
+F 2 "ALU_Connectors:JS202011SCQN" H 5850 1150 60  0001 C CNN
+F 3 "http://www.ckswitches.com/media/1422/js.pdf" H 5750 1250 60  0001 C CNN
+F 4 "JS202011SCQN" H 5850 1350 60  0001 C CNN "MPN"
+F 5 "401-2002-1-ND" H 5850 1450 60  0001 C CNN "Digikey Part"
+F 6 "https://www.digikey.ca/product-detail/en/c-k/JS202011SCQN/401-2002-1-ND/1640098" H 5850 1150 60  0001 C CNN "Digikey Singles Link"
+	1    5850 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 2050 5100 2050
+Connection ~ 5100 2050
+NoConn ~ 5350 1750
+$EndSCHEMATC
