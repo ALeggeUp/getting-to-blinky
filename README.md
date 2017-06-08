@@ -1,6 +1,6 @@
 # Getting to Blinky
 
-![gtb-3d-b.png](images/getting-to-blinky-3d-b.png)
+![getting-to-blinky-3d-c.png](images/getting-to-blinky-3d-c.png)
 
 # License
 
