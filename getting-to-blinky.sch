@@ -84,7 +84,9 @@ P 2100 3200
 F 0 "C1" H 2125 3300 50  0000 L CNN
 F 1 "10U" H 2125 3100 50  0000 L CNN
 F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand" H 2138 3050 50  0001 C CNN
-F 3 "" H 2100 3200 50  0001 C CNN
+F 3 "http://datasheets.avx.com/F93.pdf" H 2100 3200 50  0001 C CNN
+F 4 "F930J106MAA" H 2100 3200 60  0001 C CNN "MPN"
+F 5 "478-8151-1-ND" H 2100 3200 60  0001 C CNN "DKPN"
 	1    2100 3200
 	1    0    0    -1  
 $EndComp
@@ -155,7 +157,9 @@ P 4200 3100
 F 0 "U1" H 3800 3450 50  0000 L CNN
 F 1 "ICM7555" H 3800 2750 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4200 3100 50  0001 C CNN
-F 3 "" H 4200 3100 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/icm7/icm7555-56.pdf" H 4200 3100 50  0001 C CNN
+F 4 "ICM7555IBAZ-T" H 4200 3100 60  0001 C CNN "MPN"
+F 5 "ICM7555IBAZ-TCT-ND" H 4200 3100 60  0001 C CNN "DKPN"
 	1    4200 3100
 	1    0    0    -1  
 $EndComp
@@ -211,7 +215,7 @@ F 1 "JS202011SCQN" H 4950 1050 60  0001 C CNN
 F 2 "ALU_Connectors:JS202011SCQN" H 4950 650 60  0001 C CNN
 F 3 "http://www.ckswitches.com/media/1422/js.pdf" H 4850 750 60  0001 C CNN
 F 4 "JS202011SCQN" H 4950 850 60  0001 C CNN "MPN"
-F 5 "401-2002-1-ND" H 4950 950 60  0001 C CNN "Digikey Part"
+F 5 "401-2002-1-ND" H 4950 950 60  0001 C CNN "DKPN"
 F 6 "https://www.digikey.ca/product-detail/en/c-k/JS202011SCQN/401-2002-1-ND/1640098" H 4950 650 60  0001 C CNN "Digikey Singles Link"
 	1    4950 1350
 	-1   0    0    1   
